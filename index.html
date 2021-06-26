@@ -10,6 +10,9 @@
     <link rel="shortcut icon" href="images/logo-icon.png" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>LifeCare</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="owl-carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/dist/assets/owl.theme.default.min.css">
     <!-- jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -22,11 +25,8 @@
 <body>
     <!--    
     sidebar
-    timetable
     about
     find-a-vaccine
-    our services
-    reviews
     appointment
     counselling chat
     human map -->
@@ -56,8 +56,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Doctors</a>
                         </li>
-                        <button class="btn btn-primary">Book an appointment</button>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="bi bi-search" style="color: #1a99dd;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <i class="bi bi-clock" style="color: red;"></i>
+                            </a>
+                        </li>
+                        <button class="btn btn-primary ms-2">Book an appointment</button>
                         <!-- <a class="nav-link appointment-btn ms-2" href="#">Book an appointment</a> -->
+
 
 
                     </ul>
@@ -66,6 +78,35 @@
             </div>
         </nav>
     </section>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="border: 0 !important;">
+                    <h5 class="modal-title" id="exampleModalLabel">Search anything <img
+                            src="https://media.giphy.com/media/1pUvx2WHilZYxZ60e1/giphy.gif" class="img-fluid"
+                            style="height: 1.5rem;" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding-top: 0 !important;">
+                    <div class="">
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="tuberculosis">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <section>
         <div class="container" style="padding-top: 80px;padding-bottom: 80px;">
             <div class="row text-start">
@@ -190,20 +231,135 @@
 
     </section>
 
-    <section id="services" style="background-image: url(images/service-image.jpg);">
-        <!-- Blood bank department, respiratory medicine,ophthalmology,ent-surgery ,physiotherapy, laparoscopic surgery, departmentof radiology, gynaecology,  -->
-        <div class="our-services">
-            <h2>Our Services</h2>
+    <section id="services"
+        style="background-image: url(images/service-back.png);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+        <!-- Blood bank department, ,ophthalmology,ent-surgery ,, y,  ,  -->
+        <div class="our-services container py-5">
+            <h2 style="margin:0 !important; " class="text-white">Our Services</h2>
+            <div class="row text-center pt-5">
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-moisture fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">Blood Bank</p>
+
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-eye fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">Eye Specialist</p>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-sunrise fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">Ophthalmology</p>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-shield-check fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">ENT Surgery</p>
+                </div>
+            </div>
+            <div class="row text-center pt-5">
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-link fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">Physiotherapy</p>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-hurricane fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">Laparoscopic Surgery</p>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-graph-up fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">Department of Radiology</p>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <i class="bi bi-filter-circle fa-3x text-white"></i><br>
+                    <p class="text-white mt-3">Gynaecology</p>
+                </div>
+            </div>
 
         </div>
 
 
     </section>
+    <section style="background-color: #f8fbfe;">
+        <div class="container py-5">
+            <div class="owl-carousel owl-carousel1 text-center owl-theme">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2">
+                        <img class="rounded-circle review-image"
+                            src="https://preview.colorlib.com/theme/dento/img/bg-img/x8.jpg.pagespeed.ic.gI4xoMcOub.webp"
+                            alt="">
+                    </div>
+                    <div class="col-md-10 col-lg-10"
+                        style="display: flex; justify-content: center; align-items: start;flex-direction: column;">
+                        <p class="text-start"><span
+                                style="font-size: 50px;font-weight: bold;color: rgba(180, 175, 175, 0.42);">“</span> I'd
+                            been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the
+                            working day beforehand. I also had a call confirming appointment. I have been a patient ever
+                            since. My dentist is very reassuring and
+                            very helpful. Excellent treatment and advice.”</p>
+                        <h5>Anton Stanko</h5>
+                        <p class="text-muted" style="font-size: 14px;">Dental Patient</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2">
+                        <img class="rounded-circle review-image"
+                            src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-md-10 col-lg-10"
+                        style="display: flex; justify-content: center; align-items: start;flex-direction: column;">
+                        <p class="text-start"><span
+                                style="font-size: 50px;font-weight: bold;color: rgba(180, 175, 175, 0.42);">“</span> I'd
+                            been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the
+                            working day beforehand. I also had a call confirming appointment. I have been a patient ever
+                            since. My dentist is very reassuring and
+                            very helpful. Excellent treatment and advice.”</p>
+                        <h5>Anton Stanko</h5>
+                        <p class="text-muted" style="font-size: 14px;">Dental Patient</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2">
+                        <img class="rounded-circle review-image"
+                            src="https://media.allure.com/photos/5771a66f8d432b9e20f919dd/1:1/w_400%2Cc_limit/hair-ideas-2012-05-square-face-hairstyles-keira-knightley.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-md-10 col-lg-10"
+                        style="display: flex; justify-content: center; align-items: start;flex-direction: column;">
+                        <p class="text-start"><span
+                                style="font-size: 50px;font-weight: bold;color: rgba(180, 175, 175, 0.42);">“</span> I'd
+                            been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the
+                            working day beforehand. I also had a call confirming appointment. I have been a patient ever
+                            since. My dentist is very reassuring and
+                            very helpful. Excellent treatment and advice.”</p>
+                        <h5>Sangeeta Stankovic</h5>
+                        <p class="text-muted" style="font-size: 14px;">Regular Patient</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2">
+                        <img class="rounded-circle review-image"
+                            src="https://cdn.shopify.com/s/files/1/0048/5333/4051/products/product-image-1686918880_1024x.jpg?v=1613980022"
+                            alt="">
+                    </div>
+                    <div class="col-md-10 col-lg-10"
+                        style="display: flex; justify-content: center; align-items: start;flex-direction: column;">
+                        <p class="text-start"><span
+                                style="font-size: 50px;font-weight: bold;color: rgba(180, 175, 175, 0.42);">“</span> I'd
+                            been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the
+                            working day beforehand. I also had a call confirming appointment. I have been a patient ever
+                            since. My dentist is very reassuring and
+                            very helpful. Excellent treatment and advice.”</p>
+                        <h5>Novak Stanlee</h5>
+                        <p class="text-muted" style="font-size: 14px;">Regular Patient</p>
+                    </div>
+                </div>
 
 
 
+            </div>
+        </div>
 
-
+    </section>
 
     <footer class="footer-section">
         <div class="container">
@@ -320,8 +476,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="js/scripts.js"></script>
+    <script src="owl-carousel/dist/owl.carousel.min.js"></script>
 </body>
 
 </html>
