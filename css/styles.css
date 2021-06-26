@@ -299,3 +299,13 @@ ul {
     display: none;
   }
 }
+.mapster-tooltip{
+  border: 0 !important;
+  background-color: #1a99dd !important;
+  color: white;
+  border-radius: 12px !important;
+  padding-left: 10px !important;
+}
+input[type='checkbox']{
+  margin-right: 3px !important;
+}
