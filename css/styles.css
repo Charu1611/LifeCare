@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -68,6 +69,32 @@ ul {
 }
 .counter-icon:hover{
   transform: scale(0.9);
+}
+
+.doctor-name{
+  font-family: Roboto,sans-serif;
+    color: #2a2f41;
+    font-size: 25px;
+    line-height: 1.24em;
+    font-weight: 500;
+}
+.doctor-passion{
+  font-size: 15px;
+    line-height: 1.47em;
+    font-weight: 300;
+    color: #5e647a;
+}
+.doctor-image{
+  transition: 0.5s;
+}
+.doctor-image:hover{
+  transform: scale(0.95);
+}
+.plus-icon{
+  transition: 0.5s;
+}
+.plus-button:hover .plus-icon{
+  transform: rotate(90deg);
 }
 
 .footer-section {
