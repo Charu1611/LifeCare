@@ -40,6 +40,36 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+.counter-main-text{
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+  font-weight: 700;
+  text-align: center !important;
+  font-size: 38px;
+
+}
+.counter-sub-main-text{
+  color: #5e5e5e;
+  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center !important;
+  font-size: 18px;
+}
+.counter-icon{
+  font-size:50px !important; 
+  color: #1a99dd; 
+  margin-bottom: 15px;
+  transition: 1s;
+}
+.counter-icon:hover{
+  transform: scale(0.9);
+}
+
 .footer-section {
   background: #151414;
   position: relative;
