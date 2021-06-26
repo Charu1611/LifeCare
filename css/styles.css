@@ -268,7 +268,7 @@ ul {
   border-radius: 5px;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
-  background-color: #1a99dd !important;
+  background-color: #f8fbfe !important;
 }
 .owl-theme .owl-nav [class*=owl-]:hover .fa-chevron-left{
   color: white !important;
@@ -284,4 +284,18 @@ ul {
   transform: translate(70%);
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+}
+.book-card{
+  transition: all .25s ease-in;
+  
+}
+.book-card:hover{
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-width: 0 !important;
+  
+}
+@media only screen and (max-width:780px){
+  #skelton{
+    display: none;
+  }
 }
