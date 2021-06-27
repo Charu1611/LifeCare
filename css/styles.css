@@ -368,3 +368,15 @@ input[type='checkbox']{
   0% { transform: rotate(3deg); }
   100% { transform: rotate(-3deg); }
 }
+.disease-letter{
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 5px;
+  line-height: 50px;
+  display: inline;
+}
+.disease-letter:hover{
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
