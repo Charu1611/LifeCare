@@ -632,3 +632,13 @@ input[type='checkbox']{
     background-color: #1a99dd;
     margin: 0 auto;
 }
+.my-logo-image{
+  height:50%;
+  width: 50%;
+  transition: 500ms;
+  filter: grayscale(100);
+}
+.my-logo-image:hover{
+  filter: none;
+  transform: scale(1.1);
+}
