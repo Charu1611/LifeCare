@@ -642,3 +642,32 @@ input[type='checkbox']{
   filter: none;
   transform: scale(1.1);
 }
+
+.typewriter p {
+  overflow: hidden;
+  border-right: 0.15em solid #e94560; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #cac7c7;
+  }
+}
