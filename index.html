@@ -262,7 +262,7 @@
     </section>
 
 
-    
+
 
 
     <section id="services"
@@ -523,48 +523,48 @@
                             services and more.Johns Hopkins Medicine has six academic and community hospitals, multiple
                             suburban health care and surgery centers, over 40 primary and specialty care practices, home
                             care services and more.</p>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <tbody>
-                                      <tr>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
                                         <td>Ahmedabad</td>
                                         <td>Bangalore</td>
                                         <td>Chennai</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <td>Delhi</td>
                                         <td>Guwahati</td>
                                         <td>Hyderabad</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <td>Indore</td>
                                         <td>Kolkata</td>
                                         <td>Kakinada</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <td>Karur</td>
                                         <td>Lucknow</td>
                                         <td>Mumbai</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <td>Madurai</td>
                                         <td>Mysore</td>
                                         <td>Nashik</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <td>Aragonda</td>
                                         <td>Bhubaneshwar</td>
                                         <td>Bilaspur</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <td>Nellore</td>
                                         <td>Trichy</td>
                                         <td>Greater Noida</td>
-                                      </tr>
-                                      
-                                    </tbody>
-                                  </table>
-                            </div>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
                         <button class="btn btn-danger">Can't find your City?</button>
                     </div>
                 </div>
@@ -787,7 +787,43 @@
 
 
 
+    <button class="open-button" onclick="openForm()"><i class="bi bi-chat-left-quote-fill fa-2x"></i></button>
+    <div class="chat-popup" id="myForm">
+        <h4 class="p-2" style="background-color: #1a99dd;color: white;">Request a callback</h4>
+        <div class="container">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Book Appointment</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Book Health Check</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Consult Doctor Online</label>
+            </div>
+            <div class="form-floating my-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Enter City">
+                <label for="floatingInput">Enter City</label>
+            </div>
+            <div class="form-floating my-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name">
+                <label for="floatingInput">Enter Name</label>
+            </div>
+            <div class="form-floating my-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Enter Phone">
+                <label for="floatingInput">Enter Phone Number</label>
+            </div>
+            <button class="btn btn-primary">Submit Request</button>
+            <button type="button" class="btn btn-danger" onclick="closeForm()">Close</button>
+        </div>
 
+        <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+    </div>
     <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
